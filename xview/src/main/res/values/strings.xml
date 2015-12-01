@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">XView</string>
+
+    <string name="load_completed">Load Completed</string>
+    <string name="header_hint_refresh_normal">Pull Down To Refresh</string>
+    <string name="header_hint_refresh_ready">Loose To Refresh</string>
+    <string name="header_hint_refresh_loading">Data Loading&#8230;</string>
+    <string name="header_hint_refresh_time">Last Update Time：</string>
+    <string name="footer_hint_load_normal">Load More</string>
+    <string name="footer_hint_load_ready">Loose To Load More</string>
+    <string name="footer_no_more_data">No More Data</string>
+</resources>

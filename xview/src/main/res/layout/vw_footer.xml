@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/footer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/footer_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:id="@+id/footer_progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/footer_progressbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/header_hint_refresh_loading"
+                android:textColor="@color/color_06" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/footer_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/footer_hint_load_normal"
+            android:textColor="@color/color_06"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/footer_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/footer_hint_text"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_up"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
