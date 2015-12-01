@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,11 +18,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import cn.pharmplus.xview.DebugLog;
 import cn.pharmplus.xview.XListView;
 
 public class ListViewActivity extends AppCompatActivity implements XListView.IXListViewListener {
 
-	private final static String				TAG		= "ListViewActivity";
 	private SwipeRefreshLayout				mRefreshLayout;
 	private XListView						mListView;
 	private SimpleAdapter					mAdapter;
@@ -33,7 +32,7 @@ public class ListViewActivity extends AppCompatActivity implements XListView.IXL
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_listview);
-		Log.d(TAG, "onCreate");
+		DebugLog.d("onCreate");
 		mRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
 		mListView = (XListView) findViewById(R.id.list);
 

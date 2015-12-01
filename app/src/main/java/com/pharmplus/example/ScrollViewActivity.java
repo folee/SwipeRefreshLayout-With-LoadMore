@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,11 +16,11 @@ import com.demievil.example.R;
 import java.util.ArrayList;
 import java.util.Map;
 
+import cn.pharmplus.xview.DebugLog;
 import cn.pharmplus.xview.XScrollView;
 
 public class ScrollViewActivity extends AppCompatActivity implements XScrollView.IXScrollViewListener{
 
-	private final static String				TAG		= "ScrollViewActivity";
 	private SwipeRefreshLayout mRefreshLayout;
 	private XScrollView mScrollView;
 	private ArrayList<Map<String, Object>>	mData	= new ArrayList<>();
@@ -30,7 +29,7 @@ public class ScrollViewActivity extends AppCompatActivity implements XScrollView
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_scrollview);
-		Log.d(TAG, "onCreate");
+		DebugLog.d("onCreate");
 		mRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
 		mScrollView = (XScrollView) findViewById(R.id.scrollview);
 
