@@ -9,7 +9,7 @@ An extension of SwipeRefreshLayout & {XListView / XScrollView} with loading more
 ##How to Use##
     Just replace ListView by com.pharmplus.XListView or replace ScrollView by com.pharmplus.ScrollView
     
-    you also can use XListView or XScrollView independently without use SwipeRefreshLayout
+    you also can use XListView or XScrollView independently without SwipeRefreshLayout
     
     when list do not fill up the whole screen, I dismiss the footview by default. It's very easy to use, enjoy~
 
